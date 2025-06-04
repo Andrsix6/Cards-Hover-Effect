@@ -1,5 +1,6 @@
 div {
     display: inline-block;
+    box-sizing: border-box;
 }
 
 .card-title {
