@@ -86,4 +86,88 @@ div {
     transition: all 0.5s ease-out;
     color: #ffffff;
 }
+.card-title2 {
+    color: black;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.small-desc2 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: black;
+}
+
+.small-desc2 {
+    font-size: 1em;
+}
+
+.go-corner2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #62c86a, #35ca07);
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow2 {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans-serif;
+}
+
+.card2 {
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card2:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #34b630, #24742a);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+}
+
+.card2:hover:before {
+    transform: scale(28);
+}
+
+.card2:hover .small-desc2 {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card2:hover .card-title2 {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+}
 
